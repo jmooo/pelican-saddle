@@ -25,23 +25,16 @@ You can see the theme in action on [my site](http://cmetcalfe.ca/) ([site source
 ## Dependencies
 
 For automatic minification and compression of assets, this theme uses the
-[webassets](https://webassets.readthedocs.org/) package, along with `cssmin` for
-minifying css, `slimit` for compressing Javascript, and `libsass` for
-compiling the [SCSS](http://www.sass-lang.com) styles.
-
-- All these can be installed with `pip` by running `pip install -r requirements.txt`
-
-Additionally, to integrate the `webassets` package into pelican, the [pelican-assets plugin](https://github.com/pR0Ps/pelican-assets)
-is required. It's included in this repo as a submodule so it just needs to be
-activated in `pelicanconf.py`.
-
-- Add `"<theme dir>/plugins"` to the `PLUGIN_PATHS` list (or `os.path.join("<theme dir>", "plugins")` if you're feeling Pythonic)
-- Add `"assets"` to the `PLUGINS` list
+[webassets](https://webassets.readthedocs.org/) package, along with `cssmin` for minifying css,
+`slimit` for compressing Javascript, and `libsass` for compiling the
+[SCSS](http://www.sass-lang.com) styles. The pelican integration of all this is handled by the
+[webassets pelican plugin](https://github.com/pelican-plugins/webassets)
 
 ## Installing
 
-1. Clone [this repository](https://github.com/pR0Ps/pelican-subtle) making sure to get the submodules (ex: `git clone --recursive <repo>`)
-2. Install and configure the required dependencies (see above)
+1. Clone [this repository](https://github.com/pR0Ps/pelican-subtle)
+2. Install and configure the required dependencies with `pip install -r requirements.txt`
+3. Add `"webassets"` to the `PLUGINS` variable in `pelicanconf.py`.
 3. Modify the `THEME` variable in `pelicanconf.py` to point to the cloned theme location
 4. Customize the theme using the options below
 

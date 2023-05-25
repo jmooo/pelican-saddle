@@ -1,5 +1,5 @@
+pelican-webassets==2.0.0
 cssmin==0.2.0
 ply==3.11
-pyScss==1.3.7
-slimit==0.8.1
-webassets==2.0
+pyScss==1.4.0
+git+https://github.com/rspivak/slimit.git@3533eba9ad5b39f3a015ae6269670022ab310847
