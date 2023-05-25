@@ -16,7 +16,7 @@ You can see the theme in action on [my site](http://cmetcalfe.ca/) ([site source
 - Fully usable without Javascript (although enabling it adds more functionality)
 - Ability to hide email addresses from spambots
 - Syntax highlighting for code blocks
-- Integrated Google Analytics
+- Integrated Google Analytics (v4)
 - Custom sidebar links and social icons
 - Fuzzy date display (ex: "Posted 2 days ago") using Javascript
 - Disqus comment integration
@@ -44,8 +44,7 @@ When developing locally, you may want to set `SITEURL` to something like `http:/
 
 This theme supports a number of custom variables:
 
-- `GOOGLE_ANALYTICS_ID`: Your Google Analytics UA-XXXXXXXX-X code (`None` to disable analytics).
-- `GOOGLE_ANALYTICS_PROP`: Your Google Analytics property name (`None` to disable analytics).
+- `GOOGLE_ANALYTICS_ID`: Your Google Analytics G-XXXXXXXXXX measurement ID (`None` to disable analytics).
 - `DISPLAY_META_ABOVE_ARTICLE`: Set to `True` to display article information above the article (default is below).
 - `DISQUS_SITENAME`: Set this to enable Disqus comments on articles.
 - `DISQUS_COLLAPSED`: Set to `True` to have article comments hidden by default. Clicking a link on the page will load them.
