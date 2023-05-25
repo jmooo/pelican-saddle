@@ -57,7 +57,7 @@
 
 {% block scripts %}
 {{ super() }}
-{% if FUZZY_DATES %}
-<script type="text/javascript">window.addEventListener("load", lw_timeago);</script>
+{% if RELATIVE_DATES %}
+<script type="text/javascript">window.addEventListener("load", reltime);</script>
 {% endif %}
 {% endblock %}
